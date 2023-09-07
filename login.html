@@ -1,0 +1,175 @@
+<?php
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style type="text/css">
+
+		.fade-in-box {
+			animation: fadein 3s;
+			-moz-animation: fadein 3s; /* Firefox */
+			-webkit-animation: fadein 3s; /* Safari and Chrome */
+			-o-animation: fadein 3s; /* Opera */
+		}
+		@keyframes fadein {
+		    from {
+		        opacity: 0;
+		    }
+		    to {
+		        opacity: 1;
+		    }
+		}
+		@-moz-keyframes fadein { /* Firefox */
+		    from {
+		        opacity: 0;
+		    }
+		    to {
+		        opacity: 1;
+		    }
+		}
+		@-webkit-keyframes fadein { /* Safari and Chrome */
+		    from {
+		        opacity: 0;
+		    }
+		    to {
+		        opacity: 1;
+		    }
+		}
+		@-o-keyframes fadein { /* Opera */
+		    from {
+		        opacity: 0;
+		    }
+		    to {
+		        opacity: 1;
+		    }
+		}
+
+		@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+		    :root {
+		    --d: 700ms;
+		    --e: cubic-bezier(0.19, 1, 0.22, 1);
+		    --font-sans: "Rubik", sans-serif;
+		    --font-serif: "Cardo", serif;
+		}
+
+		@font-face{
+			src: url('font/AppleSDGothicNeoBold.ttf');
+			font-family: korean;
+		}
+
+		@font-face{
+			src: url('font/CookieRunBlack.ttf');
+			font-family: BlackCookie;
+		}
+
+		@font-face{
+			src: url('font/CookieRunRegular.ttf');
+			font-family: NomalCookie;
+		}
+
+		body{
+			margin: 0px;
+			padding: 0px;
+			background-color: white;
+			background-size: cover;
+			background-repeat: no-repeat;
+			font-family: nomalCookie;
+		}
+
+		.layer{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		}
+
+		.layer .content{
+			border-radius: 2em;
+			display: inline-block;
+			background: rgba(211, 211, 211, 0.5);
+			color: black;
+			vertical-align: middle;
+			width: 25%;
+			height: 30%;
+		}
+
+		.layer .blank{
+			display: inline-block;
+			width: 0;	
+			height: 100%;
+			vertical-align: middle;
+		}
+
+		.miniText{
+			font-size: 0.1vw;
+			text-align: left;
+		}
+
+		input{
+			text-align: center;
+			border: 0.15rem solid black;
+			border-radius: 2em;
+			height: 25px;
+			width: 50%;
+			margin-bottom: 5%;
+		}
+
+		.cookie{
+			font-family: Rubic;
+			font-weight: bold;
+		}
+
+		.loginbtn{
+			width: 20%;
+			height: 15%;
+			font-size: 1vw;
+		}
+
+		.btn {
+			border-radius: 2em;
+			margin-top: 1%;
+			font-family: korean;
+			font-weight: bold;
+			padding: 0.75rem 1.5rem;
+			font-size: 1rem;
+			letter-spacing: 0.025rem;
+			text-transform: uppercase;
+			color: gray;
+			background-color: black;
+			border: none;
+		}
+
+		.btn:hover {
+	  		color: white;
+	  		transform: scale(1.05);
+			transition: .5s;
+		}
+
+		.btn:focus {
+	  		outline: 1px dashed yellow;
+	  		outline-offset: 3px;
+		}
+	</style>
+</head>
+<body>
+	<div class="layer fade-in-box">
+		<span class="content">
+			<div class="cookie" style="font-size: 4vw;">JDB</div>
+			<form method="post" name="loginFrm" action="index.html" style="margin-top: 1%;">
+				<input type="text" name="id" placeholder="id" autocomplete="off">
+				<input type="password" name="pwd" placeholder="password" autocomplete="off"><br>
+				<button name="loginBtn" class="btn">로그인</button>
+			</form>
+			<br>
+		</span>
+		<span class="blank"></span>
+	</div>
+</body>	
+</html>
